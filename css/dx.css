@@ -1,16 +1,19 @@
 :root{
     font-size: 62.5%;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #232323;
     font-size: 1.5rem;
 }
+
 header{
     background-color: #232323;
     padding: 2rem;
     overflow: auto;
 }
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -21,17 +24,80 @@ h1 {
     background-size: contain;
     padding-left: 6rem;
 }
+
 nav{
     float: right;
     margin-top: 0.5rem;
-
 }
+
 nav li {
     display: inline;
     margin: 0 1rem;
     border-right-color: orangered;
 }
+
 nav li a {
     color: #fff;
     text-decoration: none;
+}
+
+.img1 {
+    background-image: url("../img/juegos-olimpicos.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+  
+h2 {
+    background-color: #232323;
+    padding: 2rem;
+    overflow: auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+section {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 5rem;
+}
+
+.fila {
+    padding: 2rem;
+    margin-left: 48rem; 
+    float: right;
+}
+
+.section1{
+
+
+}
+
+
+h3 {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 600;  
+    margin-left: 48rem; 
+    padding: 2rem;
+}
+
+h5 {
+    text-decoration: none;
+    font-size: 2rem; 
+    margin-left: 48rem; 
+    padding: 2rem;
+}
+p {
+    margin-left: 48rem; 
+    padding: 2rem;
+}
+
+.noticias-img {
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-left: 2rem;
+    float: left;
+    width: 45rem;
 }
