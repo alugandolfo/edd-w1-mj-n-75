@@ -2,10 +2,15 @@
     font-size: 62.5%;
 }
 
+* {
+    outline: dotted 1px red;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #232323;
     font-size: 1.5rem;
+    overflow: ;
 }
 
 header{
@@ -33,7 +38,6 @@ nav{
 nav li {
     display: inline;
     margin: 0 1rem;
-    border-right-color: orangered;
 }
 
 nav li a {
@@ -41,63 +45,60 @@ nav li a {
     text-decoration: none;
 }
 
-.img1 {
-    background-image: url("../img/juegos-olimpicos.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
+#noticias-destacadas {
+    width: 300vw;
+    overflow: auto;
+    animation: 20s slider infinite;
+}
+
+figure {
+    float: left;
+    width: 100vw;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+figure figcaption {
+    background-color: #232323;
+}
+
+figure h2 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 2rem;
+    line-height: 100%;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: ??;
+    align-items: ??;
+
+    background-color: rosybrown;
+}
+
+.noticia-img {
+    width: 25%;
+}
+
+.noticia-txt {
+    width: 65%;
+    background-color: seagreen;
 }
   
-h2 {
-    background-color: #232323;
-    padding: 2rem;
-    overflow: auto;
-    color: #fff;
-    text-decoration: none;
-    font-size: 5rem;
-    font-weight: 600;
-}
+@keyframes slider {
+    0% {margin-left: 0}
+    20% { margin-left: 0}
 
-section {
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 5rem;
-}
-
-.fila {
-    padding: 2rem;
-    margin-left: 48rem; 
-    float: right;
-}
-
-.section1{
-
-
-}
-
-
-h3 {
-    text-decoration: none;
-    font-size: 3rem;
-    font-weight: 600;  
-    margin-left: 48rem; 
-    padding: 2rem;
-}
-
-h5 {
-    text-decoration: none;
-    font-size: 2rem; 
-    margin-left: 48rem; 
-    padding: 2rem;
-}
-p {
-    margin-left: 48rem; 
-    padding: 2rem;
-}
-
-.noticias-img {
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding-left: 2rem;
-    float: left;
-    width: 45rem;
+    40% { margin-left: -100vw }
+    60% { margin-left: -100vw }
+    
+    80% { margin-left: -200vw }
+    100% { margin-left: -200vw}
 }
